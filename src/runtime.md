@@ -52,9 +52,9 @@ The concept is simple: If a reference to an object is established, the reference
 
 The compiler inserts retain and release calls automatically and this is opaque to a user on a higher level. On a lower level, for instance when dealing with managed objects externally, it is necessary to understand and adhere to the rules the compiler applies.
 
-{% hint style="info" %}
+::: tip
 Technically, both `__retain` and `__release` are nops when using the `stub`runtime, so one can either decide to skip the following for good or spend a little extra time to account for the possibility of upgrading to `full` later on.
-{% endhint %}
+:::
 
 #### Rules
 
